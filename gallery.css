@@ -1,0 +1,94 @@
+.galleryTitle{
+    background: #a7a7a7;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.galleryTitle p{
+    margin: 0;
+}
+
+.galleryImg{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 480px;
+}
+
+.image{ /*Foto Pameran Motor*/
+    display: block;
+    width: 480px;
+    height: auto;
+
+}
+.overlay{
+    position: absolute;
+    height: auto;
+    width: 480px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a7a7a7b2;
+}
+
+.galleryImg:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    color: black;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.galleryContent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    margin-top: 100px;
+    padding: 0 100px;
+}
+
+.footerLeft{
+    margin-top: -10px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.copyright p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footerRight{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+}
+
+.SocmedImg img{
+    width: 30px;
+    margin: 10px 0;
+}

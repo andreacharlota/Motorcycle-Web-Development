@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{ /*SELAMAT DATANG DI YBIKE INDONESIA*/
+    background: #a7a7a7;
+    font-size: 28px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: black; 
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    max-width: 100%;
+}
+
+.nav img{ /*Logo YBIKE*/
+    width: 110px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 100px; 
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    flex: 1;
+}
+
+.nav ul a{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nav ul li{
+    list-style: none;
+    position: relative;
+    padding: 8px 0; 
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown li a{ /*Dropdown Produk*/
+    color: black;
+}
+
+ul li::after{
+    content: "";
+    background: white;
+    display: block;
+    height: 2.5px;
+    width: 0;
+    margin: auto;
+    transition: .5s;
+}
+
+.dropdown li::after{
+    content: none;
+}
+
+.dropdown li:hover{
+    background: #a7a7a7;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+
+.nav ul li .dropdown{
+    display: none;
+}
+
+.nav ul li:hover .dropdown{
+    display: block;
+    background: black;
+    position: absolute;
+    padding: 10px;
+    transition: ease 5s ; 
+}
+
+.nav ul li:hover .dropdown li{
+    display: block; 
+}
+
+.images{ /*Slide 1, 2, 3*/
+    float: left;
+}
+
+.images img{
+    width: 60vw;
+    height: 30vw;  
+}
+
+#image-slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+#image-slider{
+    overflow:hidden;
+    position: relative; 
+}
+
+#slider{
+    position: relative;
+    
+}
+.left button, .right button{
+    padding: 12px 24px;
+    color: black;
+    border: 0;
+    background-color: #f8f8f8;
+    font-size: 50px;
+}
+
+.left button:hover, .right button:hover{
+    background-color: #a7a7a7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.content1 p{ /*Fitur Terbaru*/
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    text-decoration: underline 3px;
+}
+
+.bikeContent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -50px;
+}
+
+.bikeImg img{
+    width: 400px;
+    height: 200px;
+    margin: 50px 0;
+}
+
+.bikeImg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bike-name{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: -15px;
+}
+
+.bike-price{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+
+.to-product{ /*Button untuk "Selengkapnya"*/
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: black 3px solid;
+    font-weight: bolder;
+    background-color: black;
+    font-size: 14px;
+    transition: .2s ease-in;
+}
+.to-product a{
+    text-decoration: none;
+    color: white;
+}
+.to-product:hover{
+    transform: scale(1.1); 
+}
+
+.content2 p{ /*Berita Terbaru*/
+    text-align: center;
+    padding-top: 20px;
+    font-size: 35px;
+    text-decoration: underline 3px;
+}
+
+.news{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.latestNews{
+    display: flex;
+    width: 400px;
+    background: white;
+    border: black 0.5px solid;
+    box-shadow: 0 5px 5px black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    height: 500px; 
+    padding-bottom: 20px;
+}
+    
+.latestNews img{
+    border-radius: 5px;
+    width: 400px;
+}
+
+.latestNews .date{
+    font-weight: bolder;
+    font-size: 13px;
+    color: #413d3db6;
+}
+
+.latestNews .title{
+    font-size: 18px;
+    margin-top: -5px;
+    font-weight: 600;
+}
+
+.latestNews .desc{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.baca{ /*Button "Baca Lebih Lanjut"*/
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    border: black 3px solid;
+    font-weight: bolder;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: .2s ease-in;
+}
+
+.baca a{
+    text-decoration:none;
+    color: white;
+}
+
+.baca:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+.footerLeft{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.footerLeft img{
+    width: 180px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.copyright p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.footerRight{
+    display: flex;
+    width: 15%;
+    justify-content: space-evenly;
+}
+
+.footerRight p{
+    color: white;
+    margin-right: 20px;
+}
+
+.SocmedImg img{
+    width: 40px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width:1248px) {
+    .news{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .latestNews{
+        margin-top: 20px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li a{
+        font-size: 20px;
+    }
+
+    .nav ul{
+        padding: 0;
+    }
+
+    .nav img{
+        padding: 2px;
+        width: 80px;
+    }
+}
+

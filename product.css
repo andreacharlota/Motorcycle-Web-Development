@@ -1,0 +1,82 @@
+/* Untuk Vixian dan Kawasako */
+.title1{
+    top: 90px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -40px;
+    background: #a7a7a7;
+}
+
+.productContent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.productImg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.productImg img{
+    width: 330px;
+    height: 200px;
+}
+
+.product-name, .product-type, .product-price{
+    text-align: center;
+}
+
+.product-name{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product-type{
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.product-price{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.descDetail{
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+.order button{
+    background: black;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 130px;
+    height: 45px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-top: -20px;
+}
+
+.order button:hover{
+    color: black;
+    background: white;
+    transform: none;
+}
+
+@media screen and (max-width: 1119px) {
+    .productContent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImg{
+        width: 50vw;
+    }
+}
